@@ -3,12 +3,17 @@
 	angular
 		.module("productManagement")
 		.controller("ProductListCtrl",
-								ProductListCtrl);
+								["productResource",
+									ProductListCtrl]);
 
-			function ProductListCtrl(){
-
+			function ProductListCtrl(productResource){
 					var vm = this;
-					vm.products =
+
+
+
+				/*
+						HARD CODED DATA
+				vm.products =
 	[
         {
             "productId": 1,
@@ -69,10 +74,15 @@
              "category": "gaming",
              "tags": ["gaming", "controller", "video game"],
              "imageUrl": "http://openclipart.org/image/300px/svg_to_png/120337/xbox-controller_01.png"
-         }];
+         }]; */
 
+
+				 productResource.query(function(data){
+					 	vm.products = data;
+
+				 });
 				 vm.showImage = false;
-				 
+
 					vm.toggleImage = function(){
 						vm.showImage = !vm.showImage;
 			}
