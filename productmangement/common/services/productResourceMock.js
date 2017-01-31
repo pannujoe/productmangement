@@ -90,7 +90,7 @@
 					 	}
 					};
 				}
-				return [200, prdoduct, {}];
+				return [200, product, {}];
 
 		});
 
