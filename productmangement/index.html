@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html>
 	<head lang="eng">
+		<title>Harjot Singh</title>
 			<!--Styles Scripts -->
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
 			<link href="css/bootstrap.min.css" rel="stylesheet" />
+			<link href="css/toastr.css" rel="stylesheet"/>
 			<link href="css/app.css" rel="stylesheet" />
+
+
 
 
 			<!--Library Scripts -->
@@ -13,8 +18,15 @@
 			<script src="js/angular-resource.min.js"></script>
 			<script src="js/angular-mocks.js"></script>
 			<script src="js/angular-ui-router.min.js"></script>
+			<script src="js/ui-utils.js"></script>
+			<script src="js/toastr.js"></script>
+
+			<script src="js/ui-bootstrap-tpls-2.5.0.min.js"></script>
+
+
 			<script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
 			<script src="js/bootstrap.min.js"> </script>
+
 
 			<!-- Application scripts -->
 			<script src="app/app.js"></script>
@@ -47,7 +59,7 @@
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
 					<li><a ui-sref="productList"> Product List</a></li>
-					<li><a ui-sref"productEdit.info({ProductId:0})"><i class="glyphicon glyphicon-plus"></i> Add Product</a></li>
+					<li><a ui-sref="productEdit.info({ProductId:0})" > <i class="glyphicon glyphicon-plus"></i> Add Product</a></li>
 				</ul>
 			</div>
 		</div>
